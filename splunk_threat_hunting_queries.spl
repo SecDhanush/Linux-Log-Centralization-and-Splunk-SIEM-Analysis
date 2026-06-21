@@ -1,0 +1,5 @@
+# Use Case 1: Detecting SQL Injection and Bruteforce attempts within DVWA logs
+index=main sourcetype=dvwa_logs ("UNION SELECT" OR "admin" OR "password")
+
+# Use Case 2: Monitoring general authentication failures and web application errors
+index=main sourcetype=dvwa_logs ("failed" OR "unauthorized" OR "error")
